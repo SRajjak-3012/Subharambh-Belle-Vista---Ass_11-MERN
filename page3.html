@@ -1,1 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page3:Ass11css</title>
+    <link rel="stylesheet" href="page3.css">
+</head>
+<body>
+    
+    <!-- Header Section -->
+    <header>
+        <div class="header-container">
+            <nav class="navbar">
+                
+                <!-- Logo -->
+                <div class="logo">
+                    <a href="#"><img src="logo-2.jpg" alt="Belle Vista Logo"></a>
+                    <div class="text">
+                        <span class="title" id="id1">Subh<span id="id2">arambh</span></span>
+                        <span class="tagline">Aapke pairon ki aawaz</span>
+                    </div>
+                </div>
 
+                <!-- Nav Links -->
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+
+                    <!-- Dropdown: Brands -->
+                    <li class="brands-dropdown-menu">
+                        <a href="#brands">Brands ▾</a>
+                        <ul class="dropdown">
+                            <li><a href="#brands-ajanta">Ajanta</a></li>
+                            <li><a href="#brands-louis">Louis Vuitton</a></li>
+                            <li><a href="#brands-subharambh">Subharambh</a></li>
+                        </ul>
+                    </li>
+                    
+                    <!-- Dropdown: More -->
+                    <li class="more-dropdown-menu">
+                        <a href="#more">More ▾</a>
+                        <ul class="dropdown">
+                            <li><a href="#about">About</a></li>
+                            <li><a href="#faqs">FAQs</a></li>
+                            <li><a href="#privacy">Privacy Policy</a></li>
+                            <li><a href="#terms">Terms & Conditions</a></li>
+                        </ul>
+                    </li>
+
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+
+                <!-- Navigation Actions -->
+                <div class="nav-actions">
+                    <form class="search-form" action="/search" method="GET">
+                        <input type="search" placeholder="Search products...">
+                    </form>
+
+                    <div class="cart-search-box">
+                        <img src="cart icon.jpeg" alt="Cart Icon" class="cart-box-img">
+                        <input type="text" placeholder="Cart items (0)" readonly>
+                        <button type="button" class="cart-box-btn">View</button>
+                    </div>
+
+                    <div class="user-profile">
+                        <img src="user_icon.jpeg" alt="User Profile">
+                    </div>
+                </div>
+
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div class="cart-container">
+        <!-- Left Section: Cart Items -->
+        <div class="cart-left">
+            <h1 class="main-title">Shopping Cart</h1>
+            
+            <div class="cart-table">
+                <!-- Table Header -->
+                <div class="table-header">
+                    <span class="col-product">Product</span>
+                    <span class="col-quantity">Quantity</span>
+                    <span class="col-price">Price</span>
+                    <span class="col-action"></span>
+                </div>
+
+                <!-- Row 1 -->
+                <div class="table-row">
+                    <span class="col-product text-ellipsis">Seven By M.S.Dhoni Walkraoo</span>
+                    <span class="col-quantity">
+                        <button type="button" class="qty-btn">-</button>
+                        <span class="qty-num">1</span>
+                        <button type="button" class="qty-btn">+</button>
+                    </span>
+                    <span class="col-price">₹4,999</span>
+                    <span class="col-action">
+                        <button type="button" class="remove-btn">&times;</button>
+                    </span>
+                </div>
+
+                <!-- Row 2 -->
+                <div class="table-row">
+                    <span class="col-product text-ellipsis">Khadims .. Sneakers xZ25</span>
+                    <span class="col-quantity">
+                        <button type="button" class="qty-btn">-</button>
+                        <span class="qty-num">1</span>
+                        <button type="button" class="qty-btn">+</button>
+                    </span>
+                    <span class="col-price">₹999</span>
+                    <span class="col-action">
+                        <button type="button" class="remove-btn">&times;</button>
+                    </span>
+                </div>
+
+                <!-- Row 3 -->
+                <div class="table-row">
+                    <span class="col-product text-ellipsis">VKC Pride</span>
+                    <span class="col-quantity">
+                        <button type="button" class="qty-btn">-</button>
+                        <span class="qty-num">1</span>
+                        <button type="button" class="qty-btn">+</button>
+                    </span>
+                    <span class="col-price">₹2,799</span>
+                    <span class="col-action">
+                        <button type="button" class="remove-btn">&times;</button>
+                    </span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Right Section: Summary & Checkout -->
+        <div class="cart-right">
+            <div class="summary-box">
+                <label class="coupon-label">Enter Coupon Code</label>
+                <div class="coupon-form">
+                    <input type="text" placeholder="COUPON CODE" />
+                    <button type="button" class="apply-coupon-btn">Apply Coupon</button>
+                </div>
+
+                <div class="summary-details">
+                    <div class="summary-row">
+                        <span class="summary-title">Sub Total</span>
+                        <span class="summary-val">₹4,700</span>
+                    </div>
+                    <div class="summary-row">
+                        <span class="summary-title">Taxes(if applicable)</span>
+                        <span class="summary-val">₹299</span>
+                    </div>
+                    <div class="summary-row">
+                        <span class="summary-title">Discount</span>
+                        <span class="summary-val">₹0</span>
+                    </div>
+                    <div class="summary-row total-row">
+                        <span class="summary-title">Total</span>
+                        <span class="summary-val">₹4,999</span>
+                    </div>
+                </div>
+            </div>
+
+            <button type="button" class="pay-now-btn">
+                <a href="page4.html">Pay Now ₹4,999</a>
+            </button>
+
+            <div class="payment-badges">
+                <img src="SecurePayment.jpg" alt="Secure Payment" />
+                <img src="Razorpay.jpg" alt="Razorpay" />
+                <img src="SecurePayment.jpg" alt="Secure Verified" />
+            </div>
+        </div>
+    </div>
+    </main>
+
+    <footer>
+    <div class="footer-class">
+        <button type="button" class="lessthan-btn">&lt; Continue Shopping</button>
+    </div>
+</footer>
+</body>
+
+</html>
