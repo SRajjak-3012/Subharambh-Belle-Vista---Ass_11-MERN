@@ -1,1 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page-04</title>
+    <link rel="stylesheet" href="page4.css">
+</head>
+<body>
+    <div class="cart-container">
+        <!-- Left Section: Cart Items -->
+        <div class="cart-left">
+            <span class="checkout">checkout</span>
+            <h1 class="main-title">Contact Details</h1>
+            <div class="email-form">
+                <label for="email">Email ID</label>
+                <input type="text" placeholder="your-email@gmail.com" />
+            </div>
+            <h1 class="main-title payment" >Payment</h1>
+            <div class="leftcart-box">
+                <div class="paytype-box">      <!--Nested Different PayMode-->
 
+                    <div class="card-box card-box1">
+                        <img src="debit-card.jpg" alt="Card icon">
+                        <div class="card-text">Card</div>
+                    </div>
+
+                    <div class="card-box card-box2">
+                        <img src="bitcoin.jpg" alt="Card icon">
+                        <div class="card-text">Bitcoin</div>
+                    </div>
+
+                    <div class="card-box card-box3">
+                        <img src="union.png" alt="Card icon">
+                        <div class="card-text">Bank</div>
+                    </div>
+
+                    <div class="card-box card-box4">
+                        <img src="upi.png" alt="Card icon">
+                        <div class="card-text">UPI</div>
+                    </div>
+                </div>
+                <div class="cardnum-form">
+                    <label for="cardnum">Card Number</label>
+                    <input type="text" placeholder="XXXX-XXXX-XXXX-3456">
+                </div>
+                <div class="nform card-detail-1">   <!--card-detail 1-->
+                    <div class="formx expairy-form">
+                        <label for="expairy">Expairy</label>
+                        <input class="col1" type="text" placeholder="MM/YY">
+                    </div>
+                    <div class="formx cvv-form">
+                        <label for="cvv">Cvv</label>
+                        <input class="col1" type="text" placeholder="123">
+                    </div>
+                </div>
+                <div class="nform card-detail-2">   <!--card-detail 2-->
+                    <div class="formx country-form">
+                        <label for="country">Country</label>
+                        <input class="col2" type="text" placeholder="India">
+                    </div>
+                    <div class="formx zip-form">
+                        <label for="zip">Zip</label>
+                        <input class="col2" type="text" placeholder="900 210">
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+
+        <!-- Right Section: Summary & Checkout -->
+        <div class="cart-right">
+            <div class="title">
+                <h1 class="main-title" >Order Summary</h1>
+            </div>
+            <div class="summary-box">
+                <label class="coupon-label">Enter Coupon Code</label>
+                <div class="coupon-form">
+                    <input type="text" placeholder="COUPON CODE" />
+                    <button type="button" class="apply-coupon-btn">Apply Coupon</button>
+                </div>
+
+                <div class="summary-details">
+                    <div class="summary-row">
+                        <span class="summary-title">Sub Total</span>
+                        <span class="summary-val">₹4,700</span>
+                    </div>
+                    <div class="summary-row">
+                        <span class="summary-title">Taxes(if applicable)</span>
+                        <span class="summary-val">₹299</span>
+                    </div>
+                    <div class="summary-row">
+                        <span class="summary-title">Discount</span>
+                        <span class="summary-val">₹0</span>
+                    </div>
+                    <div class="summary-row total-row">
+                        <span class="summary-title">Total</span>
+                        <span class="summary-val">₹4,999</span>
+                    </div>
+                </div>
+            </div>
+
+            <button type="button" class="pay-now-btn">
+                Pay Now ₹4,999
+            </button>
+
+            <div class="payment-badges">
+                <img src="SecurePayment.jpg" alt="Secure Payment" />
+                <img src="Razorpay.jpg" alt="Razorpay" />
+                <img src="SecurePayment.jpg" alt="Secure Verified" />
+            </div>
+        </div>
+    </div>
+</body>
+</html>
