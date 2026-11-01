@@ -1,1 +1,234 @@
+/* Universal */
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
 
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    line-height: 1.6;
+    background-image: url('back-photo.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden; /* Stop page scrolling */
+}
+
+/* Main Section */
+
+.cart-container {
+    padding-top: 60px;
+    display: flex;
+    gap: 60px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Left Section */
+
+.cart-left {flex: 1.6;}
+
+.main-title {
+    font-size: 28px;
+    font-weight: 700;
+    color: #1a1a1a;
+    margin-bottom: 9px;
+}
+
+.payment{ margin-bottom: 10px;}    /* make margin less */
+
+.email-form{
+    display: flex;
+    flex-direction: column;
+}
+
+input{
+    padding: 10px;
+    border: 2px solid black;
+    border-radius: 7px;
+}
+
+/* Container displaying cards in a flex row */
+.paytype-box {
+    display: flex;
+    gap: 15px;
+    flex-wrap: wrap;
+}
+
+/* Shared Card Styles - Column layout to put text below image */
+.card-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    padding: 15px 20px;
+    border: 2px solid rgb(6, 10, 0);
+    border-radius: 8px;
+    min-width: 40px;
+    background-color: rgba(252, 251, 251, 0.902);
+}
+
+.card-box:hover {
+    border-color: #f73702;
+    background-color: hsl(57, 95%, 77%);
+}
+
+/* Resize image to icon size */
+.card-box img {
+    width: 28px;
+    height: 28px;
+    object-fit: contain;
+}
+
+.card-text {
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.cardnum-form{
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px;
+}
+
+.nform{
+    display: flex;
+    gap: 15px;
+}
+
+.formx{
+    display: flex;
+    flex-direction: column;
+}
+
+/* xxxxxxx */
+
+/* Right Section */
+.cart-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.summary-box {
+    border: 1px solid #e2e8f0;
+    border-radius: 16px;
+    padding: 24px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.02);
+}
+
+.coupon-label {
+    display: block;
+    font-size: 13px;
+    font-weight: 600;
+    color: #4a5568;
+    margin-bottom: 10px;
+}
+
+.coupon-form {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 24px;
+}
+
+.coupon-form input {
+    flex: 1;
+    padding: 12px 14px;
+    border: 1px solid #e2e8f0;
+    border-radius: 8px;
+    font-size: 13px;
+    color: #a0aec0;
+    outline: none;
+    text-transform: uppercase;
+}
+
+.coupon-form input::placeholder {
+    color: #cbd5e0;
+}
+
+.apply-coupon-btn {
+    background-color: #2563eb;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    padding: 0 16px;
+    font-weight: 600;
+    font-size: 13px;
+    cursor: pointer;
+    white-space: nowrap;
+    transition: background-color 0.2s;
+}
+
+.apply-coupon-btn:hover {
+    background-color: #1d4ed8;
+}
+
+.summary-details {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.summary-row {
+    display: flex;
+    justify-content: space-between;
+    font-size: 14px;
+    color: #718096;
+}
+
+.summary-val {
+    font-weight: 600;
+    color: #2d3748;
+}
+
+.total-row {
+    border-top: 1px solid #00070d;
+    padding-top: 14px;
+    margin-top: 4px;
+    font-size: 16px;
+    color: #1a202c;
+}
+
+.total-row .summary-val {
+    font-size: 18px;
+    font-weight: 700;
+    color: #1a202c;
+}
+
+.pay-now-btn {
+    width: 100%;
+    padding: 16px;
+    background-color: #f40505;
+    color: #070707;
+    border: none;
+    border-radius: 12px;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0 4px 12px rgba(251, 146, 60, 0.3);
+    transition: background-color 0.2s;
+}
+
+.pay-now-btn:hover {
+    background-color: #29f756;
+}
+
+.payment-badges {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 16px;
+    margin-top: 4px;
+}
+
+.payment-badges img {
+    height: 24px;
+    object-fit: contain;
+}
